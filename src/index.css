@@ -70,13 +70,17 @@ button:focus-visible {
 #nav-bar {
   background-color: #898ffd;
   width: 100vw;
-  position: absolute;
+  position: sticky;
   top: 0px;
 }
 
 .nav-bar-top {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-bar-pages > button {
+  margin: 0 1rem 0 1rem;
 }
 
 .nav-bar-top > h1 {
@@ -91,6 +95,9 @@ button:focus-visible {
 .nav-bar-bottom.nav-bar-buttons {
   display: flex;
   justify-content: space-between;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.nav-bar-bottom {
+  background-color: #767cff;
 }
