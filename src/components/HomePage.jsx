@@ -1,4 +1,3 @@
-import ShopCard from "./ShopCard";
 
 function HomePage() {
 
@@ -13,8 +12,7 @@ function HomePage() {
     return (
         <div className="content-area">
             <div id="home-page">
-                {/* {myArr.map((i) => <p>{i}</p>)} */}
-                <ShopCard />
+                <h1>Home Page!</h1>
             </div>
         </div>
     );

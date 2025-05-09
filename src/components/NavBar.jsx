@@ -1,19 +1,22 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
     return (
         <div id="nav-bar">
             <div className="nav-bar-top">
-                <h1>Store Name</h1>
+                <h1>Lavishly Lavender</h1>
                 <div className="nav-bar-buttons nav-bar-pages">
-                    <button>Home</button>
-                    <button>Shop</button>
-                    <button>Cart</button>
+                    <Link to="/" className="route-btn">Home</Link>
+                    <Link to="shop" className="route-btn">Shop</Link>
+                    <Link to="cart" className="route-btn">Cart</Link>
                 </div>
             </div>
             <div className="nav-bar-bottom nav-bar-buttons">
-                <button>Test Button</button>
-                <button>Another Button</button>
-                <button>A Third Button</button>
-                <button>A Different Button</button>
+                <button>All</button>
+                <button>Women's Clothing</button>
+                <button>Men's Clothing</button>
+                <button>Jewelry</button>
+                <button>Electronics</button>
             </div>
         </div>
     );
