@@ -24,10 +24,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: block;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -67,16 +68,25 @@ button:focus-visible {
   }
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 #nav-bar {
   background-color: #898ffd;
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0px;
+  height: 1%;
 }
 
 .nav-bar-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 7rem;
 }
 
 .nav-bar-pages > button {
@@ -95,9 +105,22 @@ button:focus-visible {
 .nav-bar-bottom.nav-bar-buttons {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: .5rem .5rem .5rem .5rem;
+}
+
+.nav-bar-bottom > button {
+  padding: .5rem 1rem .5rem 1rem;
 }
 
 .nav-bar-bottom {
   background-color: #767cff;
+  height: 3.5rem;
+}
+
+.content-area {
+  width: 100%;
+}
+
+#home-page {
+  /* width: 100%; */
 }

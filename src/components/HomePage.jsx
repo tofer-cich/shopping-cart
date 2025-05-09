@@ -9,8 +9,10 @@ function HomePage() {
     }
 
     return (
-        <div id="home-page">
-            {myArr.map((i) => <p>{i}</p>)}
+        <div className="content-area">
+            <div id="home-page">
+                {myArr.map((i) => <p>{i}</p>)}
+            </div>
         </div>
     );
 }

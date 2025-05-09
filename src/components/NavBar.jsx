@@ -10,10 +10,10 @@ function NavBar() {
                 </div>
             </div>
             <div className="nav-bar-bottom nav-bar-buttons">
-                <button>Types of Items Sold</button>
-                <button>Types of Items Sold</button>
-                <button>Types of Items Sold</button>
-                <button>Types of Items Sold</button>
+                <button>Test Button</button>
+                <button>Another Button</button>
+                <button>A Third Button</button>
+                <button>A Different Button</button>
             </div>
         </div>
     );
