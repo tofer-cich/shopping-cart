@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,8 +30,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: block;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
@@ -78,7 +85,7 @@ button:focus-visible {
   width: 100%;
   position: sticky;
   top: 0px;
-  height: 1%;
+  flex-shrink: 0;
 }
 
 .nav-bar-top {
@@ -119,8 +126,34 @@ button:focus-visible {
 
 .content-area {
   width: 100%;
+  background-color: black;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 #home-page {
-  /* width: 100%; */
+
+}
+
+.shop-card {
+  width: 15%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  border-radius: 5px;
+}
+
+.shop-card > img {
+  width: 80%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
 }

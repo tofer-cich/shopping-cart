@@ -1,3 +1,5 @@
+import ShopCard from "./ShopCard";
+
 function HomePage() {
 
     // This is all just for testing the navBar component
@@ -11,7 +13,8 @@ function HomePage() {
     return (
         <div className="content-area">
             <div id="home-page">
-                {myArr.map((i) => <p>{i}</p>)}
+                {/* {myArr.map((i) => <p>{i}</p>)} */}
+                <ShopCard />
             </div>
         </div>
     );
